@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! 🎉</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background-color: #f8d210;
+        }
+        #message {
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Congratulations! You've Won! 🎉</h1>
+    <p>Click below to claim your prize:</p>
+    <button id="claim-btn" style="padding: 10px 20px; font-size: 18px;">Claim Now</button>
+    
+    <script>
+        document.getElementById('claim-btn').addEventListener('click', function() {
+            document.body.innerHTML = '<h1 id="message">April Fools! 😂</h1>';
+            let audio = new Audio('https://www.myinstants.com/media/sounds/rick-roll.mp3');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
